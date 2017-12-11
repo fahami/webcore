@@ -6005,8 +6005,7 @@ a:hover {
 
 /* ini buat efek melirik edisi terbaru*/
 .lirik {
-    position: fixed;
-    right: 0;
-    z-index: 99;
-    width: calc(10% + 27vw);
-}
+  position: fixed;
+  right: 0;
+  z-index: 99;
+  width: calc(10% + 27vw); }
