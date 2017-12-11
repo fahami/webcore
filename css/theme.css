@@ -5910,14 +5910,13 @@ body > * {
   background: white;
   border: none;
   border-bottom: 1px solid #dee8e9;
-  border-radius: 0px;
-  }
+  border-radius: 0px; }
 
 .container.bg-liht {
   background: #fff;
   box-shadow: 0px 5px 14px #9c7a03;
   -moz-box-shadow: 0px 5px 14px #9c7a03;
-  -webkit-box-shadow: 0px 5px 14px #9c7a03;}
+  -webkit-box-shadow: 0px 5px 14px #9c7a03; }
 
 div#kiri-kontak {
   padding: 3em; }
@@ -5932,6 +5931,7 @@ button#kirim {
 
 i#kirim-icon {
   margin: 0 !important; }
+
 /* Saling Terhubung */
 .stheader h1 {
   font-family: 'arial';
@@ -6002,3 +6002,11 @@ a:hover {
   text-align: center;
   color: white;
   margin: 0 0 0 0; }
+
+/* ini buat efek melirik edisi terbaru*/
+.lirik {
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    width: calc(10% + 27vw);
+}

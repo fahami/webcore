@@ -6002,3 +6002,10 @@ a:hover {
   text-align: center;
   color: white;
   margin: 0 0 0 0; }
+/* ini buat efek melirik edisi terbaru*/
+.lirik {
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    width: calc(10% + 27vw);
+}
