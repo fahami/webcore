@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="./css/theme.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="./css/animate.css">
   <link rel="icon" href="./images/logoent.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   <title>ENT | Media</title>
 </head>
 
@@ -47,18 +47,107 @@
       </span> </div>
           </form>
         </div>
-        <div class="col-md-5">
-          <div class="card bg-dark text-white animated pulse infinite lirik">
-            <img class="card-img" src="./images/bg.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h4 class="card-title">Edisi #</h4>
-              <p class="card-text">2017</p>
+      </div>
+    </div>
+  </div>
+  <!-- ini adalah bagian preview arsip -->
+  <div class="py-5 text-dark bg-dark">
+  <div class="container">
+      <div class="row archive">
+        <div class="col col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12" style="background-color:blue">
+          <ul class="archive-menu">
+            <a onclick="showCore()"><li class="archive-list">
+              CORE Magazine
+            </li></a>
+            <a onclick="showPost()"><li class="archive-list">
+              PENS Post
+            </li></a>
+            <a onclick="showVideo()"><li class="archive-list">
+              PENS TV
+            </li></a>
+          </ul>
+        </div>
+        <div class="col col-xl-10 col-lg-9 col-md-9 col-sm-12 col-12">
+          <div class="archive-container">
+            <div class="archive-slider" id="core" style="background-color: yellow; height: 100%; padding: 5px;">
+              <div id="slider1" class="csslider infinity inside">
+        <input type="radio" name="slides" id="slides_1" checked="">
+        <input type="radio" name="slides" id="slides_2">
+        <input type="radio" name="slides" id="slides_3">
+        <input type="radio" name="slides" id="slides_4">
+        <ul>
+            <li>
+                <h1>Say hello to CSS3</h1>
+                <p>CSSlider is lightweight &amp; easy to use slider. No JS - pure CSS.</p>
+            </li>
+            <li>
+                <img src="./themes/stones.jpg">
+            </li>
+            <li>
+                <div id="bg">
+                    <div>
+                        <h1>CSS Events</h1>
+                        <p>When slide 3 is reached - play CSS animation!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="scrollable">
+                <h1>Lots of text</h1>
+                <h2>Scrollable one</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                    semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                    semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                    semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                    semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                    semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi,
+                    semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                </p>
+            </li>
+        </ul>
+        <div class="arrows">
+            <label for="slides_1"></label>
+            <label for="slides_2"></label>
+            <label for="slides_3"></label>
+            <label for="slides_4"></label>
+        </div>
+
+    </div>
+            </div>
+            <div class="archive-slider" id="post" style="background-color: orange; height: 0%; padding: 0px;">
+              &nbsp;
+            </div>
+            <div class="archive-slider" id="tv" style="background-color: lime; height: 0%; padding: 0px;">
+              &nbsp;
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function showCore(){
+        $("div#core").animate({height: '100%',padding: '5px'});
+        $("div#post").animate({height: '0%', padding: '0px'});
+        $("div#tv").animate({height: '0%', padding: '0px'});
+      }
+      function showPost(){
+        $("div#core").animate({height: '0%', padding: '0px'});
+        $("div#post").animate({height: '100%', padding: '5px'});
+        $("div#tv").animate({height: '0%', padding: '0px'});
+      }
+      function showVideo(){
+        $("div#core").animate({height: '0%', padding: '0px'});
+        $("div#post").animate({height: '0%', padding: '0px'});
+        $("div#tv").animate({height: '100%', padding: '5px'});
+      }
+    </script>
+  <!-- ini bagian akhir preview arsip -->
   <div class="py-5 text-dark bg-light">
     <div class="container">
       <div class="row">
@@ -365,9 +454,7 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-</body>
 
-</html>
+
+
+</div></body></html>
