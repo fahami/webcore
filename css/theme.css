@@ -825,10 +825,9 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  }
 
 .card-body {
   flex: 1 1 auto;
@@ -1749,7 +1748,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  }
 
 @media (min-width: 576px) {
   .container {
@@ -1765,7 +1765,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px; } }
+    max-width: 1140px;
+    } }
 
 .container-fluid {
   width: 100%;
@@ -1779,7 +1780,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px; }
+  margin-left: -15px;
+  }
 
 .no-gutters {
   margin-right: 0;
@@ -6018,6 +6020,7 @@ div.archive *{
 
 ul.archive-menu {
   list-style-type: none;
+  text-align: right;
 }
 
 ul.archive-menu li.archive-list {
@@ -6026,6 +6029,7 @@ ul.archive-menu li.archive-list {
   line-height: 4vh;
   color: white;
   letter-spacing: 1px;
+  font-size: 5vh;
 }
 
 div.archive-container {
