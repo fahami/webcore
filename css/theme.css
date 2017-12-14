@@ -6067,12 +6067,6 @@ div.archive-item {
         }
 
         @import url(http://fonts.googleapis.com/css?family=Raleway:400,700|Lato);
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
         ::-webkit-scrollbar {
             width: 2px;
             background: rgba(255, 255, 255, 0.1);
@@ -6089,31 +6083,6 @@ div.archive-item {
         ul, ol {
             padding-left: 40px;
         }
-
-        html, body {
-            height: 100%;
-            text-align: center;
-            font: 400 100% 'Raleway', 'Lato';
-            color: #333;
-            background-color: #FFF;
-            background-image: -webkit-radial-gradient(50% 10%, ellipse farthest-corner, #ffffff 35%, #cccccc);
-            background-image: -moz-radial-gradient(50% 10%, ellipse farthest-corner, #ffffff 35%, #cccccc);
-            background-image: -ms-radial-gradient(50% 10%, ellipse farthest-corner, #ffffff 35%, #cccccc);
-            background-image: -o-radial-gradient(50% 10%, ellipse farthest-corner, #ffffff 35%, #cccccc);
-            background-image: radial-gradient(farthest-corner ellipse at 50% 10%, #ffffff 35%, #cccccc);
-        }
-
-        h1 {
-            font-weight: 700;
-            font-size: 310%;
-        }
-
-        h2 {
-            font-weight: 400;
-            font-size: 120%;
-            color: #008FDF;
-        }
-
         #slider1 {
         }
 
