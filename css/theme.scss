@@ -6009,3 +6009,10 @@ a:hover {
     z-index: 99;
     width: calc(10% + 27vw);
 }
+/* ini buat kolomcari*/
+#kolomcari{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
