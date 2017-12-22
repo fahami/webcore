@@ -13,20 +13,43 @@
 		<!-- custom demo style -->
 		<link rel="stylesheet" type="text/css" href="css/demo1.css">
 		<script src="js/modernizr.custom.js"></script>
+		<style>
+		.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: black;
+    z-index: 999;
+	}
+	.konten_modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+    font-size: 3vw;
+	}
+	img.tutup {
+    width: 5%;
+    margin: 5%;
+    float: right;
+}
+</style>
 	</head>
 	<body>
-		<div class="container">
-
-
+		<div class="modal">
+			<div class="konten_modal"><p>Rotasikan layar anda menjadi landscape untuk mendapatkan pengalaman baca yang baik.</p>
+<img src="./images/rotate.svg" style="width: 25%;"></div>
+<img src="./images/close.svg" onclick="tutup()" class="tutup">
+		</div>
+		<div class="container" onload="peringatan()">
 			<header>
 				<h1>CoreMagz Edisi 1</h1>
-
 			</header>
 			<div class="main clearfix">
 				<div class="bb-custom-wrapper">
-
 					<div id="bb-bookblock" class="bb-bookblock bb-vertical">
-                        <div class="bb-item" style="display: none;">
+						<div class="bb-item" style="display: none;">
 							<a href="#"><img src="images/demo1/wideimgcvr.jpg" alt="imagecvr"></a>
 						</div>
 						<div class="bb-item" style="display: none;">
@@ -57,6 +80,15 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/jquerypp.custom.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
+		<script>
+		function peringatan()
+		{
+			document.getElementsByClassName('modal').style.display="block"
+		}
+		function tutup() {
+			document.getElementsByClassName('modal')[0].style.display="none"
+		}
+		</script>
 		<script>
 			var Page = (function() {
 
