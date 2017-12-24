@@ -3,17 +3,17 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>BookBlock: A Content Flip Plugin - Demo 1</title>
-		<meta name="description" content="Bookblock: A Content Flip Plugin - Demo 1">
-		<meta name="keywords" content="javascript, jquery, plugin, css3, flip, page, 3d, booklet, book, perspective">
-		<meta name="author" content="Codrops">
-		<link rel="shortcut icon" href="../favicon.ico">
+		<title>COREMAGZ #1</title>
+		<meta name="description" content="CoreMagz edisi 1 - Judul Topik">
+		<meta name="keywords" content="coremagz, ent media, ent crew, webmaster, read online magz, core, pens, politeknik elektronika negeri surabaya, surabaya">
+		<meta name="author" content="ENT">
+		<link rel="shortcut icon" href="./images/logoent.png">
 		<link rel="stylesheet" type="text/css" href="css/default.css">
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css">
-		<!-- custom demo style -->
 		<link rel="stylesheet" type="text/css" href="css/demo1.css">
 		<script src="js/modernizr.custom.js"></script>
 		<style>
+		@media only screen and (min-width: 1024px){.modal {display: none;}}
 		.modal {
     width: 100%;
     height: 100%;
@@ -43,9 +43,6 @@
 <img src="./images/close.svg" onclick="tutup()" class="tutup">
 		</div>
 		<div class="container" onload="peringatan()">
-			<header>
-				<h1>CoreMagz Edisi 1</h1>
-			</header>
 			<div class="main clearfix">
 				<div class="bb-custom-wrapper">
 					<div id="bb-bookblock" class="bb-bookblock bb-vertical">
@@ -81,12 +78,12 @@
 		<script src="js/jquerypp.custom.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
 		<script>
+		function tutup() {
+			document.getElementsByClassName('modal')[0].style.display="none"
+		}
 		function peringatan()
 		{
 			document.getElementsByClassName('modal').style.display="block"
-		}
-		function tutup() {
-			document.getElementsByClassName('modal')[0].style.display="none"
 		}
 		</script>
 		<script>
